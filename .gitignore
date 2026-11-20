@@ -1,0 +1,18 @@
+# ห้ามอัปโหลดไฟล์คีย์ Google API ขึ้น GitHub เด็ดขาด
+credentials.json
+*.json
+
+# ไฟล์ข้อมูล CSV ขนาดใหญ่จาก Kaggle
+*.csv
+*.zip
+
+# ไฟล์แคชและสภาพแวดล้อมของ Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ไฟล์ตั้งค่าระบบ / โฟลเดอร์ส่วนตัว
+.DS_Store
+Thumbs.db
+.env
