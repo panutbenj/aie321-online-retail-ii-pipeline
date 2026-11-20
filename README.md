@@ -6,11 +6,13 @@
 
 ## 1. สถาปัตยกรรมข้อมูลและเครื่องมือที่ใช้ (Architecture & Tech Stack)
 
+```text
 [Kaggle CSV] ──► (ingest.py) ──► [PostgreSQL: raw_data]
                                         │
                                  (transform.py)
                                         ▼
 [Looker Studio] ◄── [Google Sheets] ◄── (publish.py) ◄── [PostgreSQL: production]
+```
 
 
 * **Data Source:** ชุดข้อมูล [Online Retail II](https://www.kaggle.com/datasets/lakshmi25npathi/online-retail-dataset) (`online_retail_II.csv`)(เฉพาะปี 2010-2011)
@@ -34,6 +36,7 @@
 
 ## 3. โครงสร้างไฟล์ในโปรเจกต์ (Project Structure)
 
+```text
 ├── docker-compose.yml   # ไฟล์ตั้งค่า PostgreSQL Container บน Docker
 ├── ingest.py            # สคริปต์อ่านไฟล์ CSV และโหลดลง Schema 'raw_data'
 ├── transform.py         # สคริปต์ทำความสะอาดข้อมูล สร้าง Feature และสรุปผลลง Schema 'production'
@@ -41,6 +44,7 @@
 ├── run_pipeline.py      # สคริปต์หลักสำหรับสั่งรัน Pipeline ทั้งหมดต่อเนื่องในคำสั่งเดียว
 ├── .gitignore           # กำหนดไฟล์ที่ยกเว้นไม่ให้อัปโหลดขึ้น Git (เช่น credentials.json, *.csv)
 └── README.md            # เอกสารอธิบายโปรเจกต์และวิธีรันระบบ
+```
 
 ---
 
