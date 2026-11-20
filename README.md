@@ -20,7 +20,7 @@
   * `raw_data`: เก็บข้อมูลดิบที่นำเข้าจากไฟล์ CSV
   * `production`: เก็บข้อมูลที่ผ่านการทำความสะอาด (Cleaned Data) และตารางสรุปผล (Aggregated Tables)
 * **ETL & Automation:** Python (`pandas`, `sqlalchemy`, `psycopg2-binary`, `gspread`)
-* **Cloud Staging & BI Visualization:** Google Sheets & Google Looker Studio (Data Studio)
+* **Cloud Staging & BI Visualization:** Google Sheets & Google Data Studio
 
 ---
 
